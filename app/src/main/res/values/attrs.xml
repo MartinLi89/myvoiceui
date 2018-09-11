@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="wave">
+        <attr name="color" format="color"/>
+        <attr name="fill_mode">
+            <enum name="top" value="1"/>
+            <enum name="bottom" value="2"/>
+        </attr>
+        <attr name="speed" format="integer"/>
+        <attr name="phi" format="integer"/>
+        <attr name="omega" format="float"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="tiaovoice">
+        <attr name="tv_color" format="color"/>
+        <attr name="tv_background_color" format="color"/>
+
+        <attr name="tv_speed" format="integer"/>
+        <attr name="tv_lint_width" format="integer"/>
+
+
+    </declare-styleable>
+
+
+</resources>

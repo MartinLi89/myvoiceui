@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sample_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        />
+
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ff0000"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ff0000">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:paddingBottom="20dp">
+
+            <demo.com.myvoicedemo.WaveView
+                android:id="@+id/crm_wave1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="#ff0000"
+                app:color="#333333"
+                app:fill_mode="bottom"
+                app:omega="1.8"
+                app:phi="1"
+                app:speed="-13"/>
+
+            <demo.com.myvoicedemo.WaveView
+                android:id="@+id/crm_wave2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                app:color="#999900"
+                app:fill_mode="bottom"
+                app:omega="1.8"
+                app:phi="1"
+                app:speed="15"/>
+
+            <demo.com.myvoicedemo.WaveView
+                android:id="@+id/crm_wave3"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+
+                android:layout_alignParentBottom="true"
+                app:color="#ffffff"
+                app:fill_mode="bottom"
+                app:omega="1.8"
+                app:phi="15"
+                app:speed="-30"/>
+        </RelativeLayout>
+
+
+        <demo.com.myvoicedemo.TiaoVoice
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:tv_background_color="#ffff00"
+            app:tv_color="#0000ff"
+            app:tv_lint_width="10"
+            app:tv_speed="200"
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"/>
+
+
+</LinearLayout>
